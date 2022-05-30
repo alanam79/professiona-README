@@ -1,8 +1,33 @@
+// TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
+
+// TODO: Create a function to initialize app
+// function init() {}
+
+// Function call to initialize app
+// init();
+
 // TODO: Include packages needed for this application
 // const inquirer = require("inquirer");
+const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
-const profileDataArgs = process.argv.slice(2, process.argv.length);
-console.log(profileDataArgs);
+const readMeDataArgs = process.argv.slice(2, process.argv.length);
+
+console.log(readMeDataArgs);
+
+const [data] = readMeDataArgs;
+
+console.log(data);
+
+const readMeData = generateMarkdown(data);
+
+fs.writeFile('./generateREADME.md', readMeData, err => {
+    if (err) throw Error(err);
+
+    console.log('Your README is complete! Check it out!');
+});
+
 
 // TODO: Create an array of questions for user input
 // const questions = () => {
@@ -142,23 +167,5 @@ console.log(profileDataArgs);
 //   ]);
 // };
 
-const printProfileData = profileDataArr => {
-    // This...
-    for (let i = 0; i < profileDataArr.length; i += 1) {
-      console.log(profileDataArr[i]);
-    }
-  
-    console.log('================');
-  
-    // Is the same as this...
-    profileDataArr.forEach(profileItem => console.log(profileItem));
-  };
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();
