@@ -57,7 +57,9 @@ const generateMarkdown = (data) => {
   ${data.tests}
 
   ## Questions
-  For additional questions and/or information, please got to the creator's Github at: github.com/${data.github}, or email ${data.email}.
+  For additional questions and/or information, please got to the creator's Github at: github.com/${
+    data.github
+  }, or email ${data.email}.
 
 
   ## License
