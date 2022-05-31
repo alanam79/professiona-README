@@ -19,10 +19,11 @@
 
 const generateMarkdown = (data) => {
   return `
-    #### GitHub Username: ${data.github}
-    #### GitHub Email Address: ${data.email}
+  ![License Badge](https://img.shields.io/badge/License-${
+    data.license
+  }-green.svg)
 
-    ## License
+
     Copyright &copy;${new Date().getFullYear()} by ${data.contributing}.
     Licensed under the ${data.license} license.
     `;

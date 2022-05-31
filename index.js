@@ -8,22 +8,14 @@
 // init();
 
 // TODO: Include packages needed for this application
+
 const inquirer = require("inquirer");
-const validator = require('validator');
+const validator = require("validator");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// const readMeData = generateMarkdown(data);
-
-// fs.writeFile('./generateREADME.md', readMeData, err => {
-//     if (err) throw err;
-
-//     console.log('Your README is complete! Check it out!');
-// });
-
 // TODO: Create an array of questions for user input
-// const questions = () => {
-const promptUser = () => {
+const questions = () => {
   return inquirer.prompt([
     {
       type: "input",
@@ -159,4 +151,35 @@ const promptUser = () => {
     },
   ]);
 };
-promptUser().then((answers) => console.log(answers));
+
+// TODO: Create a function to write README file
+const writeToFile = (data) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./generatedREADME.md", data, (err) => {
+      if (err) {
+        reject(err);
+        // return out of the function here to make sure the Promise doesn't accidentally execute resolve() too
+        return;
+      }
+      // if everything went well, resolve Promise and send successful data to .then()
+      resolve({
+        ok: true,
+        message: "File created!",
+      });
+    });
+  });
+};
+
+// TODO: Create a function to initialize app
+function init() {
+  questions()
+    .then((response) => generateMarkdown(response))
+    // template literal send to writeToFile
+    .then((res) => {
+      writeToFile(res);
+      console.log("Success! Check out your generatedREADME.md");
+    });
+}
+
+// Function call to initialize app
+init();
