@@ -10,9 +10,10 @@
 // TODO: Include packages needed for this application
 
 const inquirer = require("inquirer");
-const validator = require("validator");
+const validator = require('validator');
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -55,20 +56,6 @@ const questions = () => {
           return false;
         }
       },
-    },
-    {
-      type: "checkbox",
-      name: "languages",
-      message: "What did you build this project with? (Check all that apply)",
-      choices: [
-        "Javascript",
-        "HTML",
-        "CSS",
-        "ES6",
-        "jQuery",
-        "Bootstrap",
-        "Node.js",
-      ],
     },
     {
       type: "list",
@@ -128,7 +115,7 @@ const questions = () => {
       name: "email",
       message: "What's your email address? (Required)",
       validate: (emailInput) => {
-        if (emailInput) {
+        if (validator.isEmail(emailInput)) {
           return true;
         } else {
           console.log("Please enter your email!");
@@ -153,9 +140,9 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-const writeToFile = (data) => {
+const writeToFile = data => {
   return new Promise((resolve, reject) => {
-    fs.writeFile("./generatedREADME.md", data, (err) => {
+    fs.writeFile("./generatedREADME.md", data, err => {
       if (err) {
         reject(err);
         // return out of the function here to make sure the Promise doesn't accidentally execute resolve() too
@@ -176,8 +163,9 @@ function init() {
     .then((response) => generateMarkdown(response))
     // template literal send to writeToFile
     .then((res) => {
+        console.log(res);
       writeToFile(res);
-      console.log("Success! Check out your generatedREADME.md");
+      console.log("Check out your README.md!");
     });
 }
 

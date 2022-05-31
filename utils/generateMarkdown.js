@@ -23,10 +23,47 @@ const generateMarkdown = (data) => {
     data.license
   }-green.svg)
 
+  #### GitHub Username: ${data.github}
 
-    Copyright &copy;${new Date().getFullYear()} by ${data.contributing}.
-    Licensed under the ${data.license} license.
-    `;
+  #### GitHub Email Address: ${data.email}
+
+  # ${data.title}
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributions](#contributions)
+  * [Website](#website)
+  * [Testing](#testing)
+  * [Questions](#questions)
+  * [License](#license);
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  # Contributors
+  ${data.contributing}
+
+  # Website
+  ${data.website}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions
+  For additional questions and/or information, please got to the creator's Github at: github.com/${data.github}, or email ${data.email}.
+
+
+  ## License
+  Copyright &copy;${new Date().getFullYear()} by ${data.contributing}.
+  Licensed under the ${data.license} license.
+  `;
 };
 
 module.exports = generateMarkdown;
