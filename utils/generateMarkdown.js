@@ -54,7 +54,7 @@ const generateMarkdown = (data) => {
   ${data.website}
 
   ## Tests
-  ${data.tests}
+  ${data.test}
 
   ## Questions
   For additional questions and/or information, please go to the creator's Github at: github.com/${
