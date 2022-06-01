@@ -39,7 +39,7 @@ const generateMarkdown = (data) => {
   * [Website](#website)
   * [Testing](#testing)
   * [Questions](#questions)
-  * [License](#license);
+  * [License](#license)
 
   ## Installation
   ${data.installation}
@@ -57,7 +57,7 @@ const generateMarkdown = (data) => {
   ${data.tests}
 
   ## Questions
-  For additional questions and/or information, please got to the creator's Github at: github.com/${
+  For additional questions and/or information, please go to the creator's Github at: github.com/${
     data.github
   }, or email ${data.email}.
 
@@ -65,7 +65,7 @@ const generateMarkdown = (data) => {
   ## License
   Copyright &copy;${new Date().getFullYear()} by ${data.contributing}.
   Licensed under the ${data.license} license.
-  `;
+  `
 };
 
 module.exports = generateMarkdown;

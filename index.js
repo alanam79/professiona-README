@@ -74,7 +74,7 @@ const questions = () => {
         if (projectLicense) {
           return true;
         } else {
-          console.log("Please choose a project license type!");
+          console.log("Please choose a project license type! If none, please select None.");
           return false;
         }
       },
