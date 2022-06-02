@@ -1,14 +1,14 @@
 
   ![License Badge](https://img.shields.io/badge/License-MIT-green.svg)
 
-  #### GitHub Username: alasdfasd
+  #### GitHub Username: ALANA
 
-  #### GitHub Email Address: asdf@gmail.com
+  #### GitHub Email Address: ALANA@GMAIL.COM
 
-  # asdfasdf
+  # ALANA
 
   ## Description
-  asdfasdf
+  ALANA
 
   ## Table of Contents
   * [Installation](#installation)
@@ -20,25 +20,25 @@
   * [License](#license)
 
   ## Installation
-  npm install
+  A
 
   ## Usage
-  asdfasdf
+  ALANA
 
   # Contributors
-  aasdfasd
+  ALANA
 
   # Website
-  asdfasd
+  ALANA
 
   ## Tests
   npm test
 
   ## Questions
-  For additional questions and/or information, please go to the creator's Github at: github.com/alasdfasd, or email asdf@gmail.com.
+  For additional questions and/or information, please go to the creator's Github at: github.com/ALANA, or email ALANA@GMAIL.COM.
 
 
   ## License
-  Copyright &copy;2022 by alana.
+  Copyright &copy;2022 by ALANA.
   Licensed under the MIT license.
   
