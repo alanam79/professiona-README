@@ -32,6 +32,19 @@ const questions = () => {
     },
     {
       type: "input",
+      name: "name",
+      message: "Please enter your name (Required)",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter your name!");
+          return false;
+        }
+      },
+    },
+    {
+      type: "input",
       name: "title",
       message: "What is your project title? (Required)",
       validate: (projectTitle) => {

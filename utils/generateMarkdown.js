@@ -63,7 +63,7 @@ const generateMarkdown = (data) => {
 
 
   ## License
-  Copyright &copy;${new Date().getFullYear()} by ${data.contributing}.
+  Copyright &copy;${new Date().getFullYear()} by ${data.name}.
   Licensed under the ${data.license} license.
   `
 };
