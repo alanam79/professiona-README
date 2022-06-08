@@ -23,7 +23,7 @@ const generateMarkdown = (data) => {
     data.license
   }-green.svg)
 
-  #### GitHub Username: ${data.github}
+  #### GitHub Username: [${data.github}](https://github.com/${data.github})
 
   #### GitHub Email Address: ${data.email}
 

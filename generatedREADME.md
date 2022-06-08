@@ -1,14 +1,14 @@
 
   ![License Badge](https://img.shields.io/badge/License-MIT-green.svg)
 
-  #### GitHub Username: alanam79
+  #### GitHub Username: [a](https://github.com/a)
 
-  #### GitHub Email Address: alanarmckeel@gmail.com
+  #### GitHub Email Address: amckeel@gmail.com
 
-  # Professional README
+  # a
 
   ## Description
-  Quick and easy way to make a professional README.md
+  a
 
   ## Table of Contents
   * [Installation](#installation)
@@ -23,22 +23,22 @@
   npm install
 
   ## Usage
-  This is easy and free to use. 
+  a
 
   # Contributors
-  Shaun Greene
+  a
 
   # Website
-  https://github.com/alanam79/professional-README
+  a
 
   ## Tests
   npm test
 
   ## Questions
-  For additional questions and/or information, please go to the creator's Github at: github.com/alanam79, or email alanarmckeel@gmail.com.
+  For additional questions and/or information, please go to the creator's Github at: github.com/a, or email amckeel@gmail.com.
 
 
   ## License
-  Copyright &copy;2022 by Alana McKeel.
+  Copyright &copy;2022 by a.
   Licensed under the MIT license.
   
