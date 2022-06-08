@@ -53,7 +53,7 @@ const generateMarkdown = (data) => {
   # Website
   ${data.website}
 
-  ## Tests
+  ## Testing
   ${data.test}
 
   ## Questions
