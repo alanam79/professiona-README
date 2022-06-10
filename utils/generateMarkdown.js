@@ -25,7 +25,7 @@ const generateMarkdown = (data) => {
 
   #### GitHub Username: [${data.github}](https://github.com/${data.github})
 
-  #### GitHub Email Address: ${data.email}
+  #### Email Address: ${data.email}
 
   # ${data.title}
 
