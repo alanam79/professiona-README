@@ -23,7 +23,7 @@ const generateMarkdown = (data) => {
     data.license
   }-green.svg)
 
-  #### GitHub Username: ${data.github}
+  #### GitHub Username: [${data.github}](https://github.com/${data.github})
 
   #### GitHub Email Address: ${data.email}
 
@@ -38,8 +38,10 @@ const generateMarkdown = (data) => {
   * [Contributions](#contributions)
   * [Website](#website)
   * [Testing](#testing)
+  * [Screenshots](#screenshots)
   * [Questions](#questions)
   * [License](#license)
+  * [Special Thanks](#special-thanks)
 
   ## Installation
   ${data.installation}
@@ -53,8 +55,10 @@ const generateMarkdown = (data) => {
   # Website
   ${data.website}
 
-  ## Tests
+  ## Testing
   ${data.test}
+
+  ## Screenshots
 
   ## Questions
   For additional questions and/or information, please go to the creator's Github at: github.com/${
@@ -65,6 +69,8 @@ const generateMarkdown = (data) => {
   ## License
   Copyright &copy;${new Date().getFullYear()} by ${data.name}.
   Licensed under the ${data.license} license.
+
+  ## Special Thanks
   `
 };
 
