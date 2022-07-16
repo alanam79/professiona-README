@@ -3,17 +3,17 @@
 
   #### GitHub Username: [alanam79](https://github.com/alanam79)
 
-  #### GitHub Email Address: alanarmckeel@gmail.com
+  #### Email Address: alanarmckeel@gmail.com
 
-  # NoteTaker
+  # Tech-Blog-Challenge
 
   ## Description
-  As a small business owner, you will be able to write and save notes in order to keep track of tasks that need completed. When the note taker is opened, you are presented with a landing page with a link to a notes page. When the link is clicked, you are presented with a page with existing notes listed in the left-hand column, plus empty fields to enter a new note title and the note's text in the right-hand column. When you enter a new note title and the note's text and click save, the new note is saved and appears in the left-hand column with the other existing notes. When you click on an existing note in the list in the left-hand column, the note appears in the right-hand column. When you click on the Write icon in the navigation at the top of the page, you are then presented with empty fields to enter a new title and the note's text in the right-hand column. When you click the trash can icon, the note is deleted.
+  Tech Blog
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributions](#contributions)
+  * [Contributors](#contributors)
   * [Website](#website)
   * [Testing](#testing)
   * [Screenshots](#screenshots)
@@ -22,19 +22,19 @@
   * [Special Thanks](#special-thanks)
 
   ## Installation
-  npm install
+  node index
 
   ## Usage
-  This is a quick and easy app to use. 
+  This is deployed on Heroku, but can use Insomia as well.
 
   # Contributors
-  N/A
+  .
 
   # Website
-  https://github.com/alanam79/note-taker
+  https://tranquil-shelf-31959.herokuapp.com/
 
   ## Testing
-  N/A
+  npm test
 
   ## Screenshots
 
