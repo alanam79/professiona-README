@@ -1,14 +1,14 @@
 
   ![License Badge](https://img.shields.io/badge/License-MIT-green.svg)
 
-  #### GitHub Username: [alanam79](https://github.com/alanam79)
+  #### GitHub Username: [Alana McKeel](https://github.com/Alana McKeel)
 
   #### Email Address: alanarmckeel@gmail.com
 
-  # Tech-Blog-Challenge
+  # Budget Tracker
 
   ## Description
-  Tech Blog
+  update an existing budget tracker application to allow for offline access and functionality. The user will be able to add expenses and deposits to their budget with or without a connection. If the user enters transactions offline, the total should be updated when they're brought back online.
 
   ## Table of Contents
   * [Installation](#installation)
@@ -22,24 +22,24 @@
   * [Special Thanks](#special-thanks)
 
   ## Installation
-  node index
+  N/A
 
   ## Usage
-  This is deployed on Heroku, but can use Insomia as well.
+  Clone the code to review, can run on localhost:3001 or can view directly on the website.
 
   # Contributors
-  .
+  N/A
 
   # Website
-  https://tranquil-shelf-31959.herokuapp.com/
+  https://rocky-bayou-47037.herokuapp.com/
 
   ## Testing
-  npm test
+  N/A
 
   ## Screenshots
 
   ## Questions
-  For additional questions and/or information, please go to the creator's Github at: github.com/alanam79, or email alanarmckeel@gmail.com.
+  For additional questions and/or information, please go to the creator's Github at: github.com/Alana McKeel, or email alanarmckeel@amrock.com.
 
 
   ## License
